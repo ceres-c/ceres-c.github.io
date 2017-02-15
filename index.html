@@ -1,8 +1,8 @@
 ---
 layout: post-index
 title: Latest Posts
-description: "Describe this nonsense."
-tags: [Jekyll, theme, themes, responsive, blog, modern]
+description: "Adding my meaningless zero in the world of meaningful ones."
+tags: [programming, random stuff]
 comments: false
 image:
   feature: abstract-1.jpg
@@ -34,7 +34,8 @@ image:
     {% endif %}
   </header>
   <div class="entry-content">
-    {{ post.content }}
+	{{ post.excerpt }}
+    <!-- {{ post.content }}-->
   </div><!-- /.entry-content -->
 </article><!-- /.hentry -->
 {% endfor %}
