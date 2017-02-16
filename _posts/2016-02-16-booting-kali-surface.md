@@ -206,8 +206,6 @@ And, for last, I'd like to thank you for making it to the end of this guide, ign
 <p style="text-align: right"><font size="2">PS Sorry for that introduction, I won’t do that again, I promise.</font></p>
 
 
-
-
 [1]: http://www.rodsbooks.com/refind/getting.html
 [2]: http://www.rodsbooks.com/refind/installing.html#windows
 [3]: http://www.easyuefi.com/faq/en_US/Backup-EFI-System-Partition.html
