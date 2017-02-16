@@ -5,6 +5,7 @@ excerpt: "or: How I Learned to Stop Worrying and Love Linux.<br>If only it was e
 tags: [Kali, SP4, Surface]
 image:
   feature: booting-kali/refindkali.jpg
+comments: true
 ---
 
 Generally, running a Linux distro on your PC is a straightforward process, you put the iso in the thumb drive, set it as default boot device and you’re ready to rock. Generally.
@@ -205,7 +206,23 @@ And, for last, I'd like to thank you for making it to the end of this guide, ign
 <br><br>
 <p style="text-align: right"><font size="2">PS Sorry for that introduction, I won’t do that again, I promise.</font></p>
 
-
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = {{ page.url }};  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{ page.id }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//ceres-c.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
 
 
 [1]: http://www.rodsbooks.com/refind/getting.html
