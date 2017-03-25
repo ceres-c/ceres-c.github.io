@@ -89,7 +89,7 @@ Then save and close this file. Again, in the same terminal window as before:
 	cd surface-theme
 	theme.conf
 
-Here you should change "resolution 2160 1440" to "resolution 2736 182", otherwise you'd get an error from rEFInd.
+Here you should change "resolution 2160 1440" to "resolution 2736 1820", otherwise you'd get an error from rEFInd.
 
 Once you've saved this file we're ready for the next part.
 
@@ -98,7 +98,7 @@ Once you've saved this file we're ready for the next part.
 ## Creation ##
 It sounds a bit pompous, doesn't it?
 
-To create de medium you simply have to download the ISO from Kali website and use rufus (default settings are ok) to make a bootable USB. "Iso image mode" worked for me, so it should do for you too.
+To create an install device you simply have to download the ISO from Kali website and use rufus (default settings are ok) to make a bootable USB. "Iso image mode" worked for me, so it should do for you too.
 
 ## Get it to work ##
 The USB made with rufus won't be recognised by rEFInd.
