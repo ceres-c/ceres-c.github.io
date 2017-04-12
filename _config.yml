@@ -1,11 +1,12 @@
 title:            ceres-c
-description:      Adding my meaningless zero in the world of meaningful ones.
+subtitle:         Adding my insignificant zero in the world of significant ones.
+description:      Adding my insignificant zero in the world of significant ones.
 disqus_shortname: ceres-c
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url: https://ceres-c.github.io/
 
 # Owner/author information
 owner:
@@ -14,9 +15,9 @@ owner:
   bio:            "First year software engineering student, you won't probably find anything interesting here..."
   email:          federicocerutti30@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
+  twitter:        https://twitter.com/_ceres_c
   facebook:       
-  github:         
+  github:         https://github.com/ceres-c
   stackexchange:  
   linkedin:       
   instagram:      
