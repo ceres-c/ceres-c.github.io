@@ -100,6 +100,9 @@ It sounds a bit pompous, doesn't it?
 
 To create an install device you simply have to download the ISO from Kali website and use rufus (default settings are ok) to make a bootable USB. "Iso image mode" worked for me, so it should do for you too.
 
+--Note--
+Rufus up to 2.12 is working with default settings, I haven't been able to make newer version work but I haven't even tried, actually...
+
 ## Get it to work ##
 The USB made with rufus won't be recognised by rEFInd.
 
