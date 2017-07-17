@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/ceresc
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://ceres-c.it
+  * I am ceresc (https://keybase.io/ceresc) on keybase.
+  * I have a public key ASDBOUh09Dnr_VZQAnSuNQH2NIHJuUhkEcY9e__1kB7rVQo
+
+To do so, I am signing this object:
+
+{
+    &quot;body&quot;: {
+        &quot;key&quot;: {
+            &quot;eldest_kid&quot;: &quot;0101fce4d7d2b292df4aa952bbb54fa1bb0d4f732830845ad4210a6d4ecd43a8dfd70a&quot;,
+            &quot;host&quot;: &quot;keybase.io&quot;,
+            &quot;kid&quot;: &quot;0120c1394874f439ebfd56500274ae3501f63481c9b9486411c63d7bfff5901eeb550a&quot;,
+            &quot;uid&quot;: &quot;8f4c408e43a738fa9e1b99b7d0a5eb19&quot;,
+            &quot;username&quot;: &quot;ceresc&quot;
+        },
+        &quot;merkle_root&quot;: {
+            &quot;ctime&quot;: 1500307404,
+            &quot;hash&quot;: &quot;f5e295a5638ffbac501aec46362bd88c187736b99f68b9fb3ad16bf0c18480459d3311c98e3fa465bd960154b339f4abec1107d298b6099668e5bdbb5b2d8b2a&quot;,
+            &quot;hash_meta&quot;: &quot;8d5f392559ca1a5698875a3b1879e91a58b2ef5759977bc9d660fb1d72f8d083&quot;,
+            &quot;seqno&quot;: 1238625
+        },
+        &quot;service&quot;: {
+            &quot;hostname&quot;: &quot;ceres-c.it&quot;,
+            &quot;protocol&quot;: &quot;http:&quot;
+        },
+        &quot;type&quot;: &quot;web_service_binding&quot;,
+        &quot;version&quot;: 1
+    },
+    &quot;client&quot;: {
+        &quot;name&quot;: &quot;keybase.io go client&quot;,
+        &quot;version&quot;: &quot;1.0.24&quot;
+    },
+    &quot;ctime&quot;: 1500307438,
+    &quot;expire_in&quot;: 504576000,
+    &quot;prev&quot;: &quot;25989f99ad53cf85e60c52a4f9832d0d323790af6aa8e5a521d2a81d33c6a2df&quot;,
+    &quot;seqno&quot;: 10,
+    &quot;tag&quot;: &quot;signature&quot;
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgwTlIdPQ56/1WUAJ0rjUB9jSByblIZBHGPXv/9ZAe61UKp3BheWxvYWTFA0B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxZmNlNGQ3ZDJiMjkyZGY0YWE5NTJiYmI1NGZhMWJiMGQ0ZjczMjgzMDg0NWFkNDIxMGE2ZDRlY2Q0M2E4ZGZkNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYzEzOTQ4NzRmNDM5ZWJmZDU2NTAwMjc0YWUzNTAxZjYzNDgxYzliOTQ4NjQxMWM2M2Q3YmZmZjU5MDFlZWI1NTBhIiwidWlkIjoiOGY0YzQwOGU0M2E3MzhmYTllMWI5OWI3ZDBhNWViMTkiLCJ1c2VybmFtZSI6ImNlcmVzYyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwMDMwNzQwNCwiaGFzaCI6ImY1ZTI5NWE1NjM4ZmZiYWM1MDFhZWM0NjM2MmJkODhjMTg3NzM2Yjk5ZjY4YjlmYjNhZDE2YmYwYzE4NDgwNDU5ZDMzMTFjOThlM2ZhNDY1YmQ5NjAxNTRiMzM5ZjRhYmVjMTEwN2QyOThiNjA5OTY2OGU1YmRiYjViMmQ4YjJhIiwiaGFzaF9tZXRhIjoiOGQ1ZjM5MjU1OWNhMWE1Njk4ODc1YTNiMTg3OWU5MWE1OGIyZWY1NzU5OTc3YmM5ZDY2MGZiMWQ3MmY4ZDA4MyIsInNlcW5vIjoxMjM4NjI1fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImNlcmVzLWMuaXQiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI0In0sImN0aW1lIjoxNTAwMzA3NDM4LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjI1OTg5Zjk5YWQ1M2NmODVlNjBjNTJhNGY5ODMyZDBkMzIzNzkwYWY2YWE4ZTVhNTIxZDJhODFkMzNjNmEyZGYiLCJzZXFubyI6MTAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAmARe+FPrSfaWCWEP+Wb0WAd1DM7XinM7raL9a6jK8PZK+9zUF5dp7HuRR90Owmjs3eOKsQuDl9l+N5g5bUIjD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIArM6nLbPAA/u6NeMvna3hMJsxLMGCykMMsOhaao90uHo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ceresc
+
+==================================================================
