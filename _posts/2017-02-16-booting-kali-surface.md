@@ -112,7 +112,7 @@ The USB made with rufus won't be recognised by rEFInd.
 
     in your install medium.
 
-2. Download from [kernel.org's fedora mirror][6] these 2 files:
+2. Download from [fedora's archives][6] these 2 files:
 
        BOOTX64.EFI
        grubx64.efi
@@ -214,7 +214,7 @@ And, for last, I'd like to thank you for making it to the end of this guide, ign
 [3]: http://www.easyuefi.com/faq/en_US/Backup-EFI-System-Partition.html
 [4]: https://www.reddit.com/r/SurfaceLinux/comments/2wm1ad/surface_bootloader_theme_domnload_in_comments/
 [5]: {{ site.url }}/assets/kali_boot_files/SurfaceThemerEFInd.zip
-[6]: ftp://mirrors.kernel.org/fedora/releases/25/Everything/x86_64/os/EFI/BOOT/
+[6]: https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/25/Everything/x86_64/os/EFI/BOOT/
 [7]: {{ site.url }}/assets/kali_boot_files/grub.cfg
 [8]: https://ramsdenj.com/2016/08/29/arch-linux-on-the-surface-pro-4.html
 [9]: https://forums.kali.org/showthread.php?21641-How-to-EFI-install-Kali-Linux-(Beginner-Ways)
