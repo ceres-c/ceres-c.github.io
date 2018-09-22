@@ -15,9 +15,9 @@ Still, it's good fun to fiddle with data. Let's see if we can figure out a MAC u
 
 ![Collision](/images/cracking-mac/collision.jpg)
 
-We can be quite sure this is not a complex algo simply looking at a single (albeit luck) dump. There are many collisions (highlited in different colors).
+We can be quite sure this is not a complex algo simply looking at a single (albeit lucky) dump. There are many collisions (highlighted in different colors).
 
-Given the first 3 sectors are all zeroed and still we have `AA` as the checksum we could think to a final sum or xor. Sums might overflow, though, then xor is our favourite contender. We now have the probable "final xor" (as it is called in CRC)
+Given the first 3 sectors are all zeroed and still we have `AA` as the checksum we could think to a final sum or xor. Sums might overflow, though, then xor is our favorite contender. We now have the probable "final xor" (as it is called in CRC)
 
 But what now?
 
@@ -36,7 +36,7 @@ BINGO!
 
 # Python to the rescue #
 
-Using your system's calculator is fun and all, but as humans we're prone to errors (I am expecially good at it), you don't want your test to fail because you put somewhere a byte wrongly. Python does not fail (at least in this case)
+Using your system's calculator is fun and all, but as humans we're prone to errors (I am especially good at it), you don't want your test to fail because you put somewhere a byte wrongly. Python does not fail (at least in this case)
 
 	#!/usr/bin/python3
 	import sys
