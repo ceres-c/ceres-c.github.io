@@ -21,7 +21,7 @@ Given the first 3 sectors are all zeroed and still we have `AA` as the checksum 
 
 But what now?
 
-Since we're using a xor (probably) as a final operation, it might be used elsewhere. `00 xor 00` is 00, actually, which plays nice with our first sectors.
+Since we're using a xor (probably) as a final operation, it might be used elsewhere. `00 xor 00` is 00, actually, which goes along with our first sectors.
 
 The collisions can help us now. What's different among the two lines with `50` as a CRC? Odd bytes stay the same, while even bytes change: `BC` becomes `BF` and `BD` is `BE`. What if we XOR these 2 values together? `BC xor BD = 1` and `BF xor BE = 1`, too, and the same goes for the other relevant collision. This is good, when there is a collision, the even bytes xorred together give a constant. This might be the right track.
 
