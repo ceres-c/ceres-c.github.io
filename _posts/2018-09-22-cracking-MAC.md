@@ -55,14 +55,14 @@ Using your system's calculator is fun and all, but as humans we're prone to erro
 	odd_bytes = 0x00
 	for i in range (2, 27, 4):
 		even_bytes ^= int(input_trimmed[i:i+2], 16)
-		for i in range (0, 30, 4):
-			odd_bytes ^= int(input_trimmed[i:i+2], 16)
-			print ("Even bytes: " + hex(even_bytes) + "\t\tOdd bytes: " + hex(odd_bytes))
+	for i in range (0, 30, 4):
+		odd_bytes ^= int(input_trimmed[i:i+2], 16)
+	print ("Even bytes: " + hex(even_bytes) + "\t\tOdd bytes: " + hex(odd_bytes))
 	
-		xor_even_odd = even_bytes ^ odd_bytes
-		MAC = xor_even_odd ^ 0xaa
-	
-		print ("MAC:\t" + hex(MAC))
+	xor_even_odd = even_bytes ^ odd_bytes
+	MAC = xor_even_odd ^ 0xaa
+
+	print ("MAC:\t" + hex(MAC))
 
 # Conclusion #
 This was a quick one, I'm not even sure it was worth blogging, but I thought this site was dying and wanted to do something about it...
