@@ -26,3 +26,9 @@ sitemap: false
 @import "animations";
 @import "dl-menu";
 @import "page";
+
+.image-caption {
+    text-align: center;
+    font-size: .8rem;
+    color: light-grey;
+}
