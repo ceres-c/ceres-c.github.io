@@ -7,6 +7,8 @@ image:
   feature: frida-android-keystore/script_example.jpg
 ---
 
+> _Questo post è disponibile [in italiano](https://muhack.org/talks/frida-android-keystore/)_
+
 SSL pinning is almost omnipresent in android apps, but can be easily defeated using [Xposed modules][1] or [Frida scripts][2] (more on Frida later).
 
 So, what if a dev wanted to be _extra-safe_ about what went through the net?
