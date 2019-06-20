@@ -62,7 +62,7 @@ setTimeout(function() {
         keyStoreLoadStream = Java.use('java.security.KeyStore')['load'].overload('java.io.InputStream', '[C');
 
         /* following function hooks to a Keystore.load(InputStream stream, char[] password) */
-        keyStoreLoadStream.implementation = function(stream, charArray) {
+        var keyStoreLoadStream.implementation = function(stream, charArray) {
 
             /* sometimes this happen, I have no idea why, tho... */
             if (stream == null) {
