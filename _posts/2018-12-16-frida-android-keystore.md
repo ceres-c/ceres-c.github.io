@@ -59,10 +59,10 @@ I'll ignore python code which is just a wrapper for housekeeping, let's go throu
 ```javascript
 setTimeout(function() {
     Java.perform(function () {
-        keyStoreLoadStream = Java.use('java.security.KeyStore')['load'].overload('java.io.InputStream', '[C');
+        var keyStoreLoadStream = Java.use('java.security.KeyStore')['load'].overload('java.io.InputStream', '[C');
 
         /* following function hooks to a Keystore.load(InputStream stream, char[] password) */
-        var keyStoreLoadStream.implementation = function(stream, charArray) {
+        keyStoreLoadStream.implementation = function(stream, charArray) {
 
             /* sometimes this happen, I have no idea why, tho... */
             if (stream == null) {
