@@ -6,7 +6,7 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: http://ceres-c.it
+url: https://ceres-c.it
 
 # Owner/author information
 owner:
@@ -20,7 +20,7 @@ owner:
   github:         ceres-c
   stackexchange:  
   linkedin:       
-  instagram:      
+  instagram:        
   flickr:         
   tumblr:         
   keybase:        ceresc
@@ -28,10 +28,10 @@ owner:
   google_plus:
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -89,4 +89,3 @@ exclude:
   - package.json
   - spec
   - tmp
-  - "_posts/Samples/*"
