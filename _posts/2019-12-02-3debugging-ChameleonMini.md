@@ -2,7 +2,7 @@
 layout: post
 title: "Debugging the ChameleonMini with GDB and VSCode"
 excerpt: "Because it's easier than compiling in Atmel Studio"
-tags: [Hardware, Debugging, AVR]
+tags: [Hardware, Debugging, NFC, AVR]
 image:
   feature: chameleondebugging.jpg
 ---

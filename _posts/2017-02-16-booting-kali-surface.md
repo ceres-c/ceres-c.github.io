@@ -2,7 +2,7 @@
 layout: post
 title: Booting Kali Linux on a Surface Pro 4
 excerpt: "or: How I Learned to Stop Worrying and Love Linux.<br>If only it was easier to boot it on this thing..."
-tags: [Kali, SP4, Surface]
+tags: [Kali, Surface]
 image:
   feature: booting-kali/refindkali.jpg
 ---
