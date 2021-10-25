@@ -18,17 +18,21 @@ I was less lucky as the 128A4U MCU is not in supported by upstream avarice, but 
 # Avarice #
 Avarice should be built from latest svn version as the snapshot on Sourceforge isn't building, so you
 
-    svn checkout http://svn.code.sf.net/p/avarice/code/trunk
+`svn checkout http://svn.code.sf.net/p/avarice/code/trunk`
 
 Then the above patch should be applied to `src/devdescr.cc`, for your convenience you can download a formatted .patch file [here]({{ site.url }}/assets/avarice-xmega128a4u.patch). Once done you can build it with
 
-    ./Bootstrap
-    ./configure --prefix=/usr
-    make
+```shell
+./Bootstrap
+./configure --prefix=/usr
+make
+```
 
 Once the build is done it's finally possible to connect the Atmel board (don't forget to power up the chameleon as well), then run the following command
 
-    sudo ./avarice --edbg --ignore-intr --part atxmega128a4 --pdi :4242
+```shell
+sudo ./avarice --edbg --ignore-intr --part atxmega128a4 --pdi :4242
+```
 
 `sudo` is needed as I haven't configured udev rules and otherwise avarice would simply segault
 
@@ -37,22 +41,24 @@ You'll now need the avr gdb _flavor_, which should be available in your distribu
 
 You can now open the `ChameleonMini/Firmware/Chameleon-Mini` folder in VSCode (or modify accordingly the `executable` path specified below) and finally add the debug configuration via the appropriate menu (Debug -> Add Configuration -> GDB). This configuration should work for the avarice command written above and with current ChameleonMini's makefiles output path.
 
-    {
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "type": "gdb",
-                "request": "attach",
-                "name": "ChameleonMini debug",
-                "target": ":4242",
-                "remote": true,
-                "cwd": "${workspaceRoot}",
-                "executable": "${workspaceRoot}/Chameleon-Mini.elf",
-                "valuesFormatting": "parseText",
-                "gdbpath": "avr-gdb"
-            }
-        ]
-    }
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "ChameleonMini debug",
+            "target": ":4242",
+            "remote": true,
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/Chameleon-Mini.elf",
+            "valuesFormatting": "parseText",
+            "gdbpath": "avr-gdb"
+        }
+    ]
+}
+```
 
 Now you should be able to debug the software as if you were using Atmel Studio, but you're not tied to a specific IDE or Operating System. Microsoft's VSCode [documentation](https://code.visualstudio.com/docs/cpp/cpp-debug) explains its capabilites better than I could ever do.
 
