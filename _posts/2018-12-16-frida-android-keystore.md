@@ -3,9 +3,9 @@ layout: post
 title: Extracting Android KeyStores from apps
 excerpt: "We love private keys, don't we all?"
 tags: [Android, Frida, reverse engineering]
-image:
-  feature: frida-android-keystore/script_example.jpg
 ---
+
+![Frida script](/images/frida-android-keystore/script_example.jpg)
 
 > _Questo post è disponibile [in italiano](https://muhack.org/talks/frida-android-keystore/)_
 
@@ -20,8 +20,8 @@ SSL (Secure Sockets Layer) is a protocol made to guarantee an encrypted connecti
 
 This protocol itself is safe ([Mostly][3]), but does not solve the underlying [_Key Distribution Problem_][4]. When you want to be sure no one is playing MITM and injecting his own certificates, you pin the public key to the host. If you receive a key different from the expected one, probably someone is between you and the server, so you stop the communication.
 
-{:.image-caption}
-<figure><a href="{{ site.url }}/images/frida-android-keystore/burp_alerts_no_unpin.jpg"><img src="{{ site.url }}/images/frida-android-keystore/burp_alerts_no_unpin.jpg" alt="Alerts in Burp when not unpinning certificates"></a><figcaption>Alerts in Burp when not unpinning certificates</figcaption></figure>
+![Alerts in Burp when not unpinning certificates](/images/frida-android-keystore/burp_alerts_no_unpin.jpg)
+*Alerts in Burp when not unpinning certificates*
 
 Once you used one of the well-known methods linked at the beginning of this post, all the errors should disappear and you'll find clear text traffic in your sniffing tool.
 
@@ -143,8 +143,8 @@ As a last step the real implementation of `load` is called with the original par
 # Result #
 First you have download and run `./frida-server &` on your target device, then execute my script on your computer and you should get something like this
 
-{:.image-caption}
-<figure><a href="{{ site.url }}/images/frida-android-keystore/script_example.jpg"><img src="{{ site.url }}/images/frida-android-keystore/script_example.jpg" alt="Script output example"></a><figcaption>Script output example</figcaption></figure>
+![Script output example](/images/frida-android-keystore/script_example.jpg)
+*Script output example*
 
 We now have a keystore entity saved on client's hard disk. This entity is (probably, with current code) a jks file which should be converted to a pkcs12 binary certificate to be used with other tools. You can perform the conversion with keytool, a part of your Java SDK install (it should be bundled also with the JRE, but I'm not sure).
 
@@ -155,8 +155,8 @@ keytool -importkeystore -srckeystore keystore0.jks -destkeystore dest_pkcs12_crt
 
 The first command will give you a list of available aliases in the keystore and you should supply them one by one to the second command to extract all the certificates. You'll need to specify a password for the newly created certificate.
 
-{:.image-caption}
-<figure><a href="{{ site.url }}/images/frida-android-keystore/burp_traffic_sniff.jpg"><img src="{{ site.url }}/images/frida-android-keystore/burp_traffic_sniff.jpg" alt="Clear traffic"></a><figcaption>Clear traffic</figcaption></figure>
+![Clear traffic](/images/frida-android-keystore/burp_traffic_sniff.jpg)
+*Clear traffic*
 
 Profit
 

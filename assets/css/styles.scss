@@ -1,0 +1,12 @@
+---
+---
+
+@import "bootstrap-dark";
+@import "syntax-highlighting";
+@import "main";
+
+// Custom CSSs
+img + em { // Image caption, copied from https://stackoverflow.com/a/30366422/9294143
+    display: block;
+    margin-top: -1rem; // Shift caption closer to image
+}

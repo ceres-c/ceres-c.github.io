@@ -3,9 +3,9 @@ layout: post
 title: Booting Kali Linux on a Surface Pro 4
 excerpt: "or: How I Learned to Stop Worrying and Love Linux.<br>If only it was easier to boot it on this thing..."
 tags: [Kali, Surface]
-image:
-  feature: booting-kali/refindkali.jpg
 ---
+
+![Refind with Kali on a Surface Pro 4](/images/booting-kali/refindkali.jpg)
 
 Generally, running a Linux distro on your PC is a straightforward process, you put the iso in the thumb drive, set it as default boot device and you’re ready to rock. Generally.
 
@@ -19,7 +19,7 @@ To finally boot Kali (let alone install it and make the Type Cover work, it’s 
 
 I am writing this post to make things easier for someone with the same intention, so let’s start with the guide itself.
 
-**<font size="6">TOC</font>**
+# TOC #
 
 * TOC
 {:toc}
@@ -55,7 +55,9 @@ Run terminal as admin and:
 No, {bootmgr} is not a variable, you have to input that exact string.
 
 We're all set. rEFInd is installed now. After a reboot you should be welcomed by something similar to the following, but with only a single entry: Windows.
-<figure><a href="{{ site.url }}/images/booting-kali/refind.png"><img src="{{ site.url }}/images/booting-kali/refind.png" alt="rEFInd sample screen"></a></figure>
+
+![rEFInd default screen](/images/booting-kali/refind.png)
+*rEFInd default screen*
 
 ## Theming ##
 Yeah, I know it's not important, but it's still nice to have something which goes along well with the rest of the environment. You can install a theme for rEFInd made especially for surface devices, which mimics Microsoft design choices.

@@ -1,7 +1,6 @@
-# Menu navigation links
-
-# - title: Theme Setup
-#   url: /theme-setup/
-
-# - title: External Link
-#   url: http://mademistakes.com
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Portfolio
+  link: /portfolio/

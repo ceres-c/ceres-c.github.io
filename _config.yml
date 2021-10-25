@@ -1,91 +1,58 @@
-title:            ceres-c
-subtitle:         Adding my insignificant zero in a world of significant ones.
-description:      Adding my insignificant zero in a world of significant ones.
-disqus_shortname: ceres-c
-reading_time:     true
-words_per_minute: 200
-# Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
-# When testing locally leave blank or use http://localhost:4000
+#
+# This file contains configuration flags to customize your site
+#
+
+# Name of your site (displayed in the navbar)
+name: ceres-c
+
+# Your site's title (e.g., Ben's Awesome Site, The GitHub Blog, etc.), used as part of the title tag like Home | Ben's Awesome Site.
+title: ceres-c
+
+# Link to avatar in the navbar (/assets/images/avatar.png). Leave empty if no logo desired. Two avatars for light and dark mode.
+# Avatar for light mode site
+lightavatar: /assets/images/QR.png
+# Avatar for dark mode site
+darkavatar: /assets/images/QR.png
+
+# A short description (e.g., A blog dedicated to reviewing cat gifs), used as part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing cat gifs instead of Ben's Awesome Site | Long description about a blog dedicated to reviewing cat gifs that would be used when page.title is not defined.
+tagline: Adding my insignificant zero in a world of significant ones.
+
+# A longer description used for the description meta tag. Also used as fallback for pages that don't provide their own description, and also as part of the page's title tag if neither page.title nor site.tagline has been defined.
+description: Adding my insignificant zero in a world of significant ones.
+
+# The full URL to your site. Note: site.github.url will be used by default.
 url: https://ceres-c.it
 
-# Owner/author information
-owner:
-  name:           Federico Cerutti
-  avatar:         QR.png
-  bio:            "Software engineering student, you won't probably find anything interesting here..."
-  email:          federico@ceres-c.it
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        _ceres_c
-  facebook:       
-  github:         ceres-c
-  stackexchange:  
-  linkedin:       
-  instagram:        
-  flickr:         
-  tumblr:         
-  keybase:        ceresc
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:
+# If you're hosting your site at a Project repository on GitHub pages
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+baseurl: ""
 
-# Background image to be tiled on all pages
-background:
+# global author information
+author: ceres-c
 
-# Analytics and webmaster tools stuff goes here
+# URL to a site-wide logo (e.g., /assets/your-company-logo.png)
+logo: /assets/images/QR.png
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Europe/Rome
-future:      false  # publish future dated posts --  true, false (default) 
-highlighter: rouge
-markdown:    kramdown
-gems:
+permalink: /:year/:month/:day/:title/
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  email: federico@ceres-c.it
+  facebook:
+  github: ceres-c
+  instagram: _ceres_c
+  linkedin: ceres-c
+  rss: # just type anything here for a working RSS icon
+  twitter: _ceres_c
+  keybase: ceresc
+
+plugins:
+  - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
-paginate: 5
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
-
-include: 
-  - .htaccess
-exclude: 
-  - "*.less"
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - config
-  - gulpfile.js
-  - lib
-  - log
-  - node_modules
-  - package.json
-  - spec
-  - tmp
+  - webrick

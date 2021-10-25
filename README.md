@@ -1,3 +1,1 @@
-# HPSTR Jekyll Theme
-
-My own github pages website
+My own github pages website, derived from https://github.com/andrewhwanpark/brutalist-blog

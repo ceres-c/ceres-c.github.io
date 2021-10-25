@@ -3,9 +3,9 @@ layout: post
 title: Cracking a MAC used in Mifare Cards
 excerpt: "shooting in the dark and guesstimating"
 tags: [Mifare, NFC, MAC]
-image:
-  feature: cracking-mac/feature.jpg
 ---
+
+![Mifare dump](/images/cracking-mac/feature.jpg)
 
 When working on NFC systems it is common to find MACs used to prevent users from fiddling with the data stored in the chip.
 
@@ -13,7 +13,8 @@ Still, it's good fun to fiddle with data. Let's see if we can figure out a MAC u
 
 # Working out the MAC #
 
-![Collision](/images/cracking-mac/collision.jpg)
+![MAC Collisions](/images/cracking-mac/collision.jpg)
+*MAC collisions*
 
 We can be quite sure this is not a complex algo simply looking at a single (albeit lucky) dump. There are many collisions (highlighted in different colors).
 
