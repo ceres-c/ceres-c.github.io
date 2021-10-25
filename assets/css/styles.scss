@@ -10,3 +10,7 @@ img + em { // Image caption, copied from https://stackoverflow.com/a/30366422/92
     display: block;
     margin-top: -1rem; // Shift caption closer to image
 }
+
+.highlight { // Fix highlighting in light mode
+    color: #cbcfcb;
+}
