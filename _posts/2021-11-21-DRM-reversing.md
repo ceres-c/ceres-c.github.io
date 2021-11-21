@@ -269,6 +269,7 @@ Finally, we got the correct result.
 By this time, due to the tedious debugging process we had to go through, we understood how the key derivation worked at a surface level; it can be summed up by the following snippet:
 
 ```python
+data = input_key
 for i in range(0,64):
     data += calc_one_byte_somehow()
     data = SHA256(data)
